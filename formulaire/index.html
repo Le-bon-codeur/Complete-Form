@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./view/public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./view/public/img/wave.svg" alt="wave-bg" class="wave">
+    <div class="container">
+        <header>Register</header>
+
+        <form action="./controller/formController.php" method="post">
+            <div class="form">
+                <div class="form-part one">
+                    <span class="title">Your data</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input name="fullname" type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input name="datebirth" type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input name="email" type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-part two">
+                    <span class="title">Your address</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Street Name</label>
+                            <input name="streetname" type="text" placeholder="Enter your street name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street Number</label>
+                            <input name="streetnumber" type="number" placeholder="Enter the street number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City Name</label>
+                            <input name="cityname" type="text" placeholder="Enter the city name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Postal Code</label>
+                            <input name="postalcode" type="number" placeholder="Enter the postal code" required>
+                        </div>
+                    </div>
+
+                    <button class="submitBtn">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="./view/public/js/app.js"></script>
+</body>
+</html>
